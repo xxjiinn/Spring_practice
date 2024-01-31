@@ -22,13 +22,13 @@ public class HelloController {
     }
 
     @GetMapping("hello-string") // GetMapping
-    @ResponseBody
+    @ResponseBody // ResponseBody
     public String helloString(@RequestParam("name") String name){
         return "hello !! " + name;
     }
 
     @GetMapping("hello-api") // GetMapping
-    @ResponseBody
+    @ResponseBody // ResponseBody
     public Hello helloApi(@RequestParam("name") String name){
         Hello hello = new Hello();
         hello.setName(name);
