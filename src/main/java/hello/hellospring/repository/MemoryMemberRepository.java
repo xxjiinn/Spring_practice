@@ -34,8 +34,8 @@ public class MemoryMemberRepository implements MemberRepository {
         // name과 일치하는 것 중 아무거나 반환하는데, optional이므로 null이면 null도 포함해서 반환한다.
         return store.values().stream()
                 .filter(member -> member.getName().equals(name))
-                .findAny()
-                .stream().findAny();
+                .findAny();
+//                .stream().findAny();
 
     }
 
